@@ -22,6 +22,11 @@ public class FirstTestNgClass {
 		
 		Thread.sleep(200);
 		System.out.println(driver.getTitle());
+		
+	}
+	
+	@Test(priority=3)
+	public void teardown() {
 		driver.quit();
 	}
 
